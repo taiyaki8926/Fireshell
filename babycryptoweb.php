@@ -6,7 +6,7 @@ if (isset($_GET['p']) && isset($_GET['b']) && strlen($_GET['b']) === 1 && is_num
     $p = (int) $_GET['p'];
     $code[$p] = $_GET['b'];
     eval($code);
-} else {
+} else { 
     show_source(__FILE__);
 }
 
